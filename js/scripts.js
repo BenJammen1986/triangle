@@ -10,22 +10,19 @@ $(function() {
   });
 });
 
-
-
-
-
 function triangleType (side1, side2, side3) {
     //debugger;
     if (side1 === side2 && side2 === side3) {
         $("#type").text("Your triangle is equilateral")
         console.log("test")
       }
-    if else ((side1 === side2 || side1 === side3 || side2 === side3) {  $("#type").text("Your triangle is isosceles")
+    else if (side1 === side2 || side1 === side3 || side2 === side3)
+    { $("#type").text("Your triangle is isosceles")
         console.log("test")
       }
 
-    if else (side1 != side2 && side1 != side3 && side2 != side3) {
-      $("#type").text("Your triangle is isosceles")
+    else if (side1 != side2 && side1 != side3 && side2 != side3)
+    { $("#type").text("Your triangle is scalene")
         console.log("test")
       }
     }
@@ -34,5 +31,5 @@ function triangleType (side1, side2, side3) {
 
   // //This is an equilateral triangle
   //
-  // if else side1 === side2 || side1 === side3 || side2 === side3
+  // else if side1 === side2 || side1 === side3 || side2 === side3
   // var answer
